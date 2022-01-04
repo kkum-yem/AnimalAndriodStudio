@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+    </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/test_btn"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/walking_orange">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <Button
+        android:id="@+id/test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알림 설정"
+        android:background="@drawable/but_puple"
+        android:fontFamily="@font/buttonfont"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/alarm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알람"
+        app:layout_constraintStart_toEndOf="@+id/test_btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/but_puple"
+        android:fontFamily="@font/buttonfont"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintWidth_percent=".8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

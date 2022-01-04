@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application Project</string>
+
+    <string-array name="alarm_list">
+        <item>카톡</item>
+        <item>카톡왔숑</item>
+        <item>카카오톡</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_notice"
+        android:icon="@drawable/baseline_shopping_bag_black_24"
+        android:title="공지" />
+
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/chatting"
+        android:title="채팅" />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/baseline_add_circle_outline_black_24"
+        android:title="추가" />
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/baseline_home_black_24"
+        android:title="커뮤니티" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/baseline_person_black_24"
+        android:title="My page" />
+
+</menu>
